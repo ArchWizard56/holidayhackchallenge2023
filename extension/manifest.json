@@ -1,0 +1,31 @@
+{
+    "description": "All of the web hacks for the 2023 holiday hack challenge",
+    "manifest_version": 2,
+    "name": "Archwizard's Holiday Hacks 2023",
+    "version": "1.0",
+    "homepage_url": "https://github.com/ArchWizard56/holidayhackchallenge2023/extension",
+    "icons": {
+        "48": "icons/icon_48.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/icon_48.png",
+        "default_title": "Archwizard's Holiday Hacks 2023",
+        "default_popup": "popup/main.html"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://*.holidayhackchallenge.com/*",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "snowball-fight/background.js"
+        ]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "57.0a1"
+        }
+    }
+}
