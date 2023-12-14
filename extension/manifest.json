@@ -20,7 +20,8 @@
     ],
     "background": {
         "scripts": [
-            "snowball-fight/background.js"
+            "snowball-fight/rapid_fire.js",
+            "snowball-fight/infinite_health.js"
         ]
     },
     "browser_specific_settings": {
