@@ -10,10 +10,8 @@ function infinite_health_listener(details) {
     let decoder = new TextDecoder("utf-8");
     let encoder = new TextEncoder();
 
-    console.log("Got a data")
     var data = ''
     filter.ondata = event => {
-        console.log("Got a data")
         let incoming_data = decoder.decode(event.data);
         data += incoming_data
     }
@@ -47,7 +45,6 @@ function update_snowball_infinite_health_status (enabled) {
 
 // Enable or disable rapid fire based on the state of local storage
 browser.storage.local.get("snowball_infinite_health", (items) => {
-    console.log(items)
     if (items.snowball_infinite_health == undefined) {
         return
     }
@@ -56,7 +53,6 @@ browser.storage.local.get("snowball_infinite_health", (items) => {
 }
 );
 browser.storage.onChanged.addListener(changeData => {
-    console.log(changeData)
     if (changeData.snowball_infinite_health != undefined) {
         update_snowball_infinite_health_status(changeData.snowball_infinite_health.newValue.enabled)
     }

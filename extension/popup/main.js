@@ -22,7 +22,7 @@ document.getElementById('snowball_rapid_fire').addEventListener('change', ev => 
 })
 
 function setItem() {
-  console.log("OK");
+  console.log("Set local storage ok");
 }
 
 function onError(error) {
