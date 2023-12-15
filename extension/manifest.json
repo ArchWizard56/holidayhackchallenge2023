@@ -28,6 +28,17 @@
             "elfhunt/speed.js"
         ]
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://hhc23-reportinator-dot-holidayhack2023.ue.r.appspot.com/?*"
+            ],
+            "js": [
+                "reportinator/bruteforce-content.js"
+            ],
+            "all_frames": true
+        }
+    ],
     "browser_specific_settings": {
         "gecko": {
             "strict_min_version": "57.0a1"

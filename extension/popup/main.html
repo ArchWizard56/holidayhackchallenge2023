@@ -28,7 +28,17 @@
             margin-right: 10px;
         }
 
-        #snowball-fight, #elfhunt {
+        button {
+            background-color: #4caf50; /* Green background color for buttons */
+            color: #fff; /* White text color for buttons */
+        }
+
+        #reportinator_bruteforce_label {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px; /* Adjust the font size as needed */
+        }
+
+        #snowball-fight, #elfhunt, #reportinator {
             background-color: #ffffff; /* White background for cheat boxes */
             padding: 20px;
             margin: 20px;
@@ -71,6 +81,15 @@
             <li>
                 <input type="text" id="elfhunt_speed" name="elfhunt_speed">
                 <label for="elfhunt_speed">Elf Speed</label>
+            </li>
+        </ul>
+    </div>
+    <div id="reportinator">
+        <h4>Reportinator Cheats</h4>
+        <ul>
+            <li>
+                <button type="text" id="reportinator_bruteforce" name="reportinator_bruteforce">
+                <label id="reportinator_bruteforce_label" for="reportinator_bruteforce">Bruteforce</label>
             </li>
         </ul>
     </div>
