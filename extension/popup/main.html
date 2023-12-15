@@ -1,27 +1,70 @@
-<html>
-<style>
-    html,
-    body {
-        width: 300px;
-    }
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowball Fight Cheats</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        #snowball-fight {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h4 {
+            color: #228B22; /* Forest Green */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        label {
+            color: #333;
+        }
+
+        #snowball-fight::before {
+            content: '\2744'; /* Snowflake Emoji */
+            font-size: 36px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 <body>
     <div id="snowball-fight">
         <h4>Snowball Fight Cheats</h4>
         <ul>
             <li>
-                <input type="checkbox" id="snowball_infinite_health" name="snowball_infinite_health"> <label
-                    for="snowball_infinite_health"> Infinite Health</label>
+                <input type="checkbox" id="snowball_infinite_health" name="snowball_infinite_health">
+                <label for="snowball_infinite_health">Infinite Health</label>
             </li>
             <li>
-                <input type="checkbox" id="snowball_rapid_fire" name="snowball_rapid_fire"> <label
-                    for="snowball_rapid_fire">Rapid Fire Snowballs</label>
+                <input type="checkbox" id="snowball_rapid_fire" name="snowball_rapid_fire">
+                <label for="snowball_rapid_fire">Rapid Fire Snowballs</label>
             </li>
         </ul>
     </div>
-
 </body>
 <script src="main.js"></script>
-
 </html>
