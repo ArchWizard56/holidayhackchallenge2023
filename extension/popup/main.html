@@ -1,53 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snowball Fight Cheats</title>
+    <title>Christmas Game Cheats</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa; /* Light blue background */
             margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #snowball-fight {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         h4 {
-            color: #228B22; /* Forest Green */
+            color: #ff5252; /* Red text color */
         }
 
         ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
 
         li {
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
 
-        input[type="checkbox"] {
+        input[type="checkbox"], input[type="text"] {
             margin-right: 10px;
         }
 
-        label {
-            color: #333;
+        #snowball-fight, #elfhunt {
+            background-color: #ffffff; /* White background for cheat boxes */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        #snowball-fight::before {
-            content: '\2744'; /* Snowflake Emoji */
-            font-size: 36px;
-            display: block;
-            margin-bottom: 10px;
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: url('https://source.unsplash.com/1920x1080/?snow') center center fixed;
+            background-size: cover;
+            z-index: -1;
         }
     </style>
 </head>
@@ -65,6 +64,17 @@
             </li>
         </ul>
     </div>
+
+    <div id="elfhunt">
+        <h4>Elf Hunt Cheats</h4>
+        <ul>
+            <li>
+                <input type="text" id="elfhunt_speed" name="elfhunt_speed">
+                <label for="elfhunt_speed">Elf Speed</label>
+            </li>
+        </ul>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
+
