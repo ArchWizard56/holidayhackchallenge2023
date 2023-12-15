@@ -15,13 +15,17 @@
     "permissions": [
         "webRequest",
         "webRequestBlocking",
+        "storage",
+        "scripting",
+        "cookies",
         "https://*.holidayhackchallenge.com/*",
-        "storage"
+        "https://*.elfhunt.org/*"
     ],
     "background": {
         "scripts": [
             "snowball-fight/rapid_fire.js",
-            "snowball-fight/infinite_health.js"
+            "snowball-fight/infinite_health.js",
+            "elfhunt/speed.js"
         ]
     },
     "browser_specific_settings": {
